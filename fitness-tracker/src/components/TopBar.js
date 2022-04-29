@@ -11,11 +11,15 @@ function TopBar () {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                  <Nav.Link href="#home">Fitness Tracker</Nav.Link>
-                  <Nav.Link href="#link">Activity</Nav.Link>
-                  <Button variant="outline-secondary">Log In</Button>
-                  <Nav.Link href="#link">Create Account</Nav.Link>
-                </Nav>
+                <div className="navBar">
+          <ul>
+           
+            <li>
+              <a href={<Activity/>}>Activity</a>
+            </li>
+          </ul>
+        </div>
+             </Nav>
               </Navbar.Collapse>
             </Container>
           </Navbar>
