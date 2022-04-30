@@ -1,11 +1,15 @@
 import React from "react";
 
-function CreateUser(){
+
+function Profile(){
+
+
+    
     return(
         <div>
-            <ha>Sign Up</ha>
+            <ha>Login</ha>
         </div>
     )
 }
 
-export default CreateUser
+export default Profile;

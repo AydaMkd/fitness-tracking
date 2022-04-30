@@ -1,7 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from "react-bootstrap/NavDropdown"
 import Button from 'react-bootstrap/Button';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
@@ -16,8 +15,8 @@ function TopBar () {
                 <Nav className="me-auto">
                   <Nav.Link href="/">Home</Nav.Link>
                   <Nav.Link href="/create">Activity</Nav.Link>
-                  <Button variant="outline-secondary">Log In</Button>
-                  <Nav.Link href="/log">Create Account</Nav.Link>
+                  <Button href="/log" variant="outline-secondary">Log In</Button>
+                  <Nav.Link href="/signup">Create Account</Nav.Link>
                 </Nav>
               </Navbar.Collapse>
             </Container>
