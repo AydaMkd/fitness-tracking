@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Route} from "react-router-dom";
 import TopBar from './components/TopBar';
 
 import Home from './components/Home';
-import CreateUser from './components/CreateUser';
+import Profile from './components/Profile';
 
 
 
@@ -33,7 +33,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/create" element={<Activity />} />
-              <Route path="/log" element={<CreateUser/>} />
+              <Route path="/log" element={<Profile />} />
             </Routes>
           </div>
 
