@@ -1,5 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import React from "react";
 
 function CreateProfile(){
@@ -24,7 +26,16 @@ function CreateProfile(){
   <Form.Label>Optional</Form.Label>
   <Form.Group className="mb-3" controlId="formBasicMeasurements">
     <Form.Check type="checkbox" label="Track measurements" />
-   
+    <Form.Group>
+      <Row>
+        <Col>
+    <Form.Control type="number" placeholder="Starting weight in pounds" />
+    </Col>
+    <Col>
+    <Form.Control type="number" placeholder="Goal weight in pounds" />
+    </Col>
+    </Row>
+    </Form.Group>
     <Form.Control type="number" placeholder="Starting chest measurement in inches" />
     <Form.Control type="number" placeholder="Starting waist measurement in inches" />
     <Form.Control type="number" placeholder="Starting hips measurement in inches" />
